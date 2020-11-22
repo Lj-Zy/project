@@ -8,12 +8,15 @@ class Student{
 interface Person{
    firstName:string;
    lastName :string;
+   type : string;
 }
 
 function greeter(person:Person){
-   return  person.firstName + person.lastName+ this.middleInitial;
+   return  person.firstName + person.lastName+ person.type;
 }
 
-let user = new Student("李杰", "李滢","喜欢");
+let user = new Student("李杰", "李y", "喜欢", "好");
 
 document.body.innerHTML = greeter(user);
+
+
