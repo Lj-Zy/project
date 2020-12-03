@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [
+            {name:1, number:1},
+            {name:1, number:12},
+            {name:1, number:24},
+            {name:1, number:35},
+            {name:1, number:30},
+            {name:1, number:11}
+        ]
+
+        var arr1 = arr.sort((n1,n2)=>{
+            return n1.number > n2.number ? 1 : -1;
+        })
+
+        console.log(arr1,"jijijij");
+    </script>
+</body>
+</html>
